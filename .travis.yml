@@ -33,8 +33,7 @@ before_install:
   #install qt5
   - sudo add-apt-repository ppa:beineri/opt-qt58-trusty -y 
   - sudo apt-get install -y qtbase5-dev 
-  - sudo apt-get install -y qt5-default 
-  - sudo apt-get install -y libqt5qml5
+  - sudo apt-get install -y qtdeclarative5-dev
   #fi    
   #if [[ "$TRAVIS_OS_NAME" == "osx" ]] && [[ "$CXX_ID" == "gcc" ]]; then
   #brew install gcc
@@ -43,7 +42,7 @@ before_install:
   #fi
 
 script:
-  - cmake -D CMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake;/usr/lib/x86_64-linux-gnu/cmake/Qt5Qml  CMakeLists.txt 
+  - cmake -D CMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake CMakeLists.txt 
   - make 
 
        
