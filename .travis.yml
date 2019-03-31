@@ -50,7 +50,7 @@ install:
     fi
 
 
-script: make all
+script: cmake CMakeLists.txt ; make all
 
        
 
