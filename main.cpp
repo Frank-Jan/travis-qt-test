@@ -1,6 +1,13 @@
-#include <QDebug>
-#include <iostream>
-int main() {
-    std::cout << qVersion() << "\n";
-    return 0;
+#include <QGuiApplication>
+#include <QQmlApplicationEngine>
+
+int main(int argc, char *argv[])
+{
+    QGuiApplication app(argc, argv);
+
+    QQmlApplicationEngine engine;
+
+    engine.load(QUrl(QStringLiteral("main.qml")));
+
+    return app.exec();
 }
