@@ -42,8 +42,8 @@ before_install:
   #fi
 
 script:
-  cmake CMakeLists.txt
-  make all
+  cmake CMakeLists.txt ;
+  make all ;
 
        
 
