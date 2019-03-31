@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/qtclion.dir/main.cpp.o CMakeFiles/qtclion.dir/qtclion_autogen/mocs_compilation.cpp.o  -o qtclion -Wl,-rpath,/home/fj/Qt/5.12.2/gcc_64/lib /home/fj/Qt/5.12.2/gcc_64/lib/libQt5Widgets.so.5.12.2 /home/fj/Qt/5.12.2/gcc_64/lib/libQt5Gui.so.5.12.2 /home/fj/Qt/5.12.2/gcc_64/lib/libQt5Core.so.5.12.2 

@@ -1,4 +1,0 @@
-/home/fj/Documents/testProjects/qtclion/CMakeFiles/rebuild_cache.dir
-/home/fj/Documents/testProjects/qtclion/CMakeFiles/edit_cache.dir
-/home/fj/Documents/testProjects/qtclion/CMakeFiles/qtclion.dir
-/home/fj/Documents/testProjects/qtclion/CMakeFiles/qtclion_autogen.dir
