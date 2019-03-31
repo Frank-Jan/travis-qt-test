@@ -23,26 +23,26 @@ matrix:
       compiler: gcc
       env: MATRIX_EVAL="CC=gcc-8 && CXX=g++-8 && TRAVIS_BUILD_DOCS=true"
       addons: {apt: { packages: [*default_packages, g++-8], sources: [*default_sources]}}
-    - os: osx
-      osx_image: xcode10.1
-      compiler: gcc
-      env: MATRIX_EVAL="CXX_ID=gcc && CC=gcc-8 && CXX=g++-8"
+   # - os: osx
+   #   osx_image: xcode10.1
+   #   compiler: gcc
+   #   env: MATRIX_EVAL="CXX_ID=gcc && CC=gcc-8 && CXX=g++-8"
 
 before_install:
-    if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
-      #install qt5
-      sudo apt-get install qtbase5-dev
-      sudo apt-get install qt5-default
-    fi    
-    if [[ "$TRAVIS_OS_NAME" == "osx" ]] && [[ "$CXX_ID" == "gcc" ]]; then
-      brew install gcc
-      brew install qt5
-      export PATH="/usr/local/bin:$PATH"
-    fi
+  #if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
+  #install qt5
+  sudo apt-get install qtbase5-dev
+  sudo apt-get install qt5-default
+  #fi    
+  #if [[ "$TRAVIS_OS_NAME" == "osx" ]] && [[ "$CXX_ID" == "gcc" ]]; then
+  #brew install gcc
+  #brew install qt5
+  #export PATH="/usr/local/bin:$PATH"
+  #fi
 
 script:
-  - cmake CMakeLists.txt
-  - make all
+  cmake CMakeLists.txt
+  make all
 
        
 
