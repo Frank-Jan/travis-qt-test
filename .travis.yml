@@ -31,7 +31,7 @@ before_install:
 
 
 install:    
-    - sudo apt-get --yes install qt55base qt55imageformats qt55
+    - sudo apt-get --yes install qt55base qt55
     - cmake CMakeLists.txt
     - make
     
