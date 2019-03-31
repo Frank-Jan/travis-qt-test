@@ -43,8 +43,7 @@ before_install:
   #fi
 
 script:
-  - cmake -DQT_CMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake
-  - cmake CMakeLists.txt 
+  - cmake -D CMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake CMakeLists.txt 
   - make 
 
        
