@@ -31,5 +31,7 @@ install:
     - cmake CMakeLists.txt
     - make
 
+script: make
+
        
 
