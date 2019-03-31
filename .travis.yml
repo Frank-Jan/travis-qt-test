@@ -15,6 +15,7 @@ addons:
     update: true
     sources: &default_sources
       - ubuntu-toolchain-r-test
+    packages: &default_packages      
 
 matrix:
   include:
@@ -49,8 +50,9 @@ install:
     - make
     fi
 
-
-script: cmake CMakeLists.txt && make all
+script:
+  - cmake CMakeLists.txt
+  - make all
 
        
 
