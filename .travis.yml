@@ -40,16 +40,6 @@ before_install:
       export PATH="/usr/local/bin:$PATH"
     fi
 
-install:
-    if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
-    - cmake CMakeLists.txt
-    - make
-    fi
-    if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
-    - cmake CMakeLists.txt
-    - make
-    fi
-
 script:
   - cmake CMakeLists.txt
   - make all
